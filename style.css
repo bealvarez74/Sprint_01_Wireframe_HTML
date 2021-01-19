@@ -1,0 +1,137 @@
+
+/*
+0.General
+1.header
+2.navegación
+3.contenido
+4.footer
+*/
+
+
+/*
+0.General
+*/
+
+/*establecemos diseño base de elementos, medidas y colores*/
+* {box-sizing: border-box;
+   margin:0;
+   padding:0;}
+
+.container{
+	width: 1000px;
+	background-color: #fff;
+	margin: auto;
+}
+
+	header, ul, section, main, footer {
+	width:100%;
+	}
+
+	header, div.primary-content{
+	background-color: #4b4b4d;
+	}
+
+	div.section-intro, aside, footer {
+	background-color:#858688;
+	}
+
+/*
+1.header
+*/
+
+header {
+	height: 120px;
+	margin: 20px 0px 21px 0px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+	/*logo posicionado a la izquierda del header*/
+		.logo{
+		width:200px;
+		height:60px;
+		margin-left:30px;
+		background-color: #d2d3d5;
+	}
+	/*botones redes sociales posicionados a la derecha y centrados verticalmente en header*/
+		.botones{
+		display:flex;
+		width:141px;
+		height:120px;
+		margin-right: 20px;
+		justify-content: space-between;
+		align-items:center;
+	}
+		/*diseño botones redes sociales*/
+		.circulos{
+			width: 41px;
+			height: 41px;
+			border-radius:100px;
+			background-color: #d2d3d5;
+		}
+
+/*
+2.navegación
+*/
+
+/*barra de navegación principal alineación horizontal*/
+	ul.nav {
+		display:flex;
+		list-style: none;
+		margin-bottom:25px;	
+	}
+		li {
+			width: 200px; 
+			height: 48px;
+			background-color: #97989a;
+			border-right: 1px solid #fff;
+			border-left: 1px solid #fff;
+		}
+
+/*
+3.contenido
+*/
+
+	/*sección de tres cajas de contenido alineadas horizontalmente*/
+	.intro {
+	display: flex;
+    justify-content: space-between;
+	}
+
+	/*items sección intro*/
+		.intro-1, .intro-2 {
+			height: 192px;
+			background-color: #858688;
+			margin-bottom: 24px;
+		}
+		.intro-1 {
+			width: 329px;
+		}
+
+		.intro-2 {
+			width: 324px;
+		}
+
+	/*sección principal formado por barras laterales y contenido central*/
+	.main {
+	display:flex;
+	margin-bottom:24px;
+	}
+		.aside, .primary-content{
+		display:inline-block;
+		height: 453px;
+		}
+		.primary-content{
+		width: 600px;
+		}
+		.aside {
+		width:200px;
+		}
+
+/*
+3.footer
+*/
+	footer{
+		height: 71px;
+		margin-bottom:20px;
+	}
